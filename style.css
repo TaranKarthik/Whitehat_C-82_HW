@@ -1,0 +1,82 @@
+:root {
+    --first-color: #f5af19;
+    --second-color: #f12711;
+    --clr-light: #fafafa;
+    --clr-canvas: #ffff;
+    --clr-canvas-border: #f5f5f5;
+    --primer-font: "Work Sans";
+    --fallback-font: arial;
+}
+
+
+
+.body_backgorund {
+    background: #f12711;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--first-color), var(--second-color));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--first-color), var(--second-color));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    background-position: center;
+    color: var(--clr-light);
+    font-family: var(--primer-font), var(--fallback-font);
+}
+
+body {
+    cursor: pointer;
+}
+
+
+h1 {
+    color: var(--clr-light);
+    font-size: 60px;
+}
+
+#myCanvas {
+    border-width: 4px;
+    background-color: var(--clr-canvas);
+    border-color: var(--clr-canvas-border);
+    border-style: solid;
+
+}
+
+input {
+    margin-left: 20px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: var(--clr-light);
+    font-family: var(--primer-font),var(--fallback-font);
+}
+
+button {
+    background-color: var(--clr-light);
+    border: none;
+    color: var(--second-color);
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    width: 10rem;
+    font-family: var(--primer-font),var(--fallback-font);
+    transition: all 0.6s ease;
+}
+
+button:hover {
+    color: var(--clr-light);
+    background: var(--second-color);
+}
+
+input {
+    margin-right: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid white;
+}
+
+button:focus {
+    outline: none;
+    
+}
